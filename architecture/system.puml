@@ -1,0 +1,15 @@
+@startuml
+
+component WheelSensor
+
+component SpeedCalculator
+
+component Dashboard
+
+component OverspeedMonitor
+
+WheelSensor --> SpeedCalculator
+SpeedCalculator --> Dashboard
+SpeedCalculator --> OverspeedMonitor
+
+@enduml
