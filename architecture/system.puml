@@ -1,0 +1,11 @@
+@startuml
+
+actor Driver
+
+rectangle Dashboard
+rectangle VehicleController
+
+Driver --> Dashboard
+Dashboard --> VehicleController
+
+@enduml
