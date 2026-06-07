@@ -1,11 +1,15 @@
 @startuml
 
-actor Driver
+component WheelSensor
 
-rectangle Dashboard
-rectangle VehicleController
+component SpeedCalculator
 
-Driver --> Dashboard
-Dashboard --> VehicleController
+component Dashboard
+
+component OverspeedMonitor
+
+WheelSensor --> SpeedCalculator
+SpeedCalculator --> Dashboard
+SpeedCalculator --> OverspeedMonitor
 
 @enduml
