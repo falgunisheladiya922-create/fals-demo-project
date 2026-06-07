@@ -1,4 +1,4 @@
-name: ASPICE Workflow
+name: ASPICE Workflow 1
 
 on:
   push:
